@@ -29,13 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](screenshots/screenshot-1.png)
-![](screenshots/screenshot-2.png)
+![](img/screenshots/screenshot-1.png)
+![](img/screenshots/screenshot-2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Darko96/interactive-rating-component]
+- Live Site URL: [https://darko96.github.io/interactive-rating-component/]
 
 ## My process
 
