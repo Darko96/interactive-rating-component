@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <!-- Rating state start -->
+      <section class="rating">
+        <div class="container">
+          <div class="star-box">
+            <img src="img/icon-star.svg" alt="star icon" class="star-img" />
+          </div>
+          <h1 class="rating-heading">How did we do?</h1>
+          <p class="rating-desc">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form class="ratings">
+            <ul class="rating-list">
+              <li class="rating-item">
+                <button class="rating-btn" type="button">1</button>
+              </li>
+              <li class="rating-item">
+                <button class="rating-btn" type="button">2</button>
+              </li>
+              <li class="rating-item">
+                <button class="rating-btn" type="button">3</button>
+              </li>
+              <li class="rating-item">
+                <button class="rating-btn" type="button">4</button>
+              </li>
+              <li class="rating-item">
+                <button class="rating-btn" type="button">5</button>
+              </li>
+            </ul>
+            <button class="submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- Rating state end -->
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

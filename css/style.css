@@ -1,0 +1,249 @@
+:root {
+  --orange: #fb7413;
+  --white: #ffffff;
+  --light-Grey: #959eac;
+  --medium-Grey: #7c8798;
+  --dark-Blue: #252d37;
+  --very-dark-blue: #121417;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 3rem;
+}
+
+.container {
+  max-width: 41.2rem;
+  padding: 3.2rem;
+}
+
+.star-box {
+  background-color: var(--dark-Blue);
+  padding: 1.6rem;
+  max-width: 4.8rem;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.rating-heading {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.rating-desc {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: var(--light-Grey);
+  margin-bottom: 2.4rem;
+}
+
+.rating-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.rating-btn {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: var(--medium-Grey);
+  background-color: var(--dark-Blue);
+  padding: 1.3rem 2.1rem;
+  border-radius: 10rem;
+  margin-bottom: 3.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.rating-btn:hover {
+  background-color: var(--medium-Grey);
+  color: var(--white);
+}
+
+.rating-btn:active,
+.rating-btn:focus {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  padding: 1.1rem 13.8rem 1.5rem 13.8rem;
+  border-radius: 2.2rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+/* Thank you state start */
+.thank-you-container {
+  text-align: center;
+  max-width: 41.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  padding: 4.5rem 3.2rem;
+}
+
+.rating-score {
+  background-color: var(--dark-Blue);
+  padding: 0.4rem 1.9rem;
+  border-radius: 2.2rem;
+}
+
+.thank-you-heading {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+}
+
+.thank-you-desc {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 0;
+}
+
+.given-rating-text {
+  color: var(--orange);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+@media (max-width: 425px) {
+  .rating {
+    background: radial-gradient(
+      98.96% 98.96% at 50% 0%,
+      #232a34 0%,
+      #181e27 100%
+    );
+    width: 87%;
+    border-radius: 1.5rem;
+  }
+
+  .container {
+    max-width: 41.2rem;
+    padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+  }
+
+  .star-box {
+    background-color: var(--dark-Blue);
+    padding: 1.3rem;
+    max-width: 4rem;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+  }
+
+  .rating-heading {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .rating-desc {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .rating-btn {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 0.8rem 1.7rem;
+    margin-bottom: 2.4rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding: 1.2rem 10.8rem;
+  }
+
+  /* Thank you state start */
+  .thank-you-container {
+    gap: 2.4rem;
+    padding: 3.4rem 2.4rem 3.7rem 2.4rem;
+  }
+
+  .thank-you-heading {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .smartphone-img-box {
+    max-width: 14.4rem;
+  }
+
+  .rating-score {
+    padding: 0.5rem 1.2rem;
+  }
+
+  .thank-you-desc {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
